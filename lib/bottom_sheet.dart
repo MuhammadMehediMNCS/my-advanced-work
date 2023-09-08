@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 
-class bSheet extends StatelessWidget {
-  const bSheet({Key? key}) : super(key: key);
+class BottomsheetPart1 extends StatelessWidget {
+  const BottomsheetPart1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BotSheet(),
+      home: BottomDesign(),
     );
   }
 }
 
-class BotSheet extends StatefulWidget {
-  const BotSheet({Key? key}) : super(key: key);
+class BottomDesign extends StatefulWidget {
+  const BottomDesign({Key? key}) : super(key: key);
 
   @override
-  State<BotSheet> createState() => _BotSheetState();
+  State<BottomDesign> createState() => _BottomDesignState();
 }
 
-class _BotSheetState extends State<BotSheet> {
+class _BottomDesignState extends State<BottomDesign> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

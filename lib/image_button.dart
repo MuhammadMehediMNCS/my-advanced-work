@@ -13,7 +13,7 @@ class ImageButton extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo
       ),
-      home: const circleDesignButton(titile: titile),
+      home: const CircleDesignButton(titile: titile),
     );
   }
 }
@@ -68,16 +68,16 @@ class _ImgButtonState extends State<ImgButton> {
   }
 }
 
-class rowDesignButton extends StatefulWidget {
+class RowDeisgnButton extends StatefulWidget {
   final String titile;
 
-  const rowDesignButton({super.key, required this.titile});
+  const RowDeisgnButton({super.key, required this.titile});
 
   @override
-  State<rowDesignButton> createState() => _rowDesignButtonState();
+  State<RowDeisgnButton> createState() => _RowDeisgnButtonState();
 }
 
-class _rowDesignButtonState extends State<rowDesignButton> {
+class _RowDeisgnButtonState extends State<RowDeisgnButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -118,16 +118,16 @@ class _rowDesignButtonState extends State<rowDesignButton> {
   }
 }
 
-class circleDesignButton extends StatefulWidget {
+class CircleDesignButton extends StatefulWidget {
   final String titile;
 
-  const circleDesignButton({super.key, required this.titile});
+  const CircleDesignButton({super.key, required this.titile});
 
   @override
-  State<circleDesignButton> createState() => _circleDesignButtonState();
+  State<CircleDesignButton> createState() => _CircleDesignButtonState();
 }
 
-class _circleDesignButtonState extends State<circleDesignButton> {
+class _CircleDesignButtonState extends State<CircleDesignButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Show_Hide extends StatelessWidget {
-  const Show_Hide({Key? key}) : super(key: key);
+class ShowOrHide extends StatelessWidget {
+  const ShowOrHide({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

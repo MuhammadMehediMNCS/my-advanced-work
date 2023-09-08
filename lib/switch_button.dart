@@ -15,21 +15,21 @@ class SwitchButtonDesign extends StatelessWidget {
         primaryColor: Colors.green.shade200,
         primarySwatch: Colors.indigo
       ),
-      home: const SBDesign(title: title),
+      home: const SwitchButtonWidget(title: title),
     );
   }
 }
 
-class SBDesign extends StatefulWidget {
+class SwitchButtonWidget extends StatefulWidget {
   final String title;
 
-  const SBDesign({super.key, required this.title});
+  const SwitchButtonWidget({super.key, required this.title});
 
   @override
-  State<SBDesign> createState() => _SBDesignState();
+  State<SwitchButtonWidget> createState() => _SwitchButtonWidgetState();
 }
 
-class _SBDesignState extends State<SBDesign> {
+class _SwitchButtonWidgetState extends State<SwitchButtonWidget> {
   bool value = true;
 
   @override

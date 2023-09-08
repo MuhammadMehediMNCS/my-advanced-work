@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class ExampleSharedP extends StatelessWidget {
+class ExampleSharedWidget extends StatelessWidget {
   static const String title = 'Shared Prefarences';
 
-  const ExampleSharedP({super.key});
+  const ExampleSharedWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,20 +29,20 @@ class PreferencesExample extends StatefulWidget {
 }
 
 class _PreferencesExampleState extends State<PreferencesExample> {
-  int Counter = 0;
+  int counter = 0;
 
   loadCounter() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     setState(() {
-      Counter = pref.getInt("Counter") ?? 0;
+      counter = pref.getInt("Counter") ?? 0;
     });
   }
 
   increment() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     setState(() {
-      Counter++;
-      pref.setInt("Counter", Counter);
+      counter++;
+      pref.setInt("Counter", counter);
     });
   }
 
@@ -65,7 +65,7 @@ class _PreferencesExampleState extends State<PreferencesExample> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'You Have Pressed $Counter',
+                'You Have Pressed $counter',
                 style: const TextStyle(fontSize: 35),
               )
             ],

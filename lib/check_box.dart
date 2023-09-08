@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-class C_Box extends StatelessWidget {
-  const C_Box({Key? key}) : super(key: key);
+class CheckBoxWidget extends StatelessWidget {
+  const CheckBoxWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Check_B(),
+      home: CheckBoxDesign(),
     );
   }
 }
 
-class Check_B extends StatefulWidget {
-  const Check_B({Key? key}) : super(key: key);
+class CheckBoxDesign extends StatefulWidget {
+  const CheckBoxDesign({Key? key}) : super(key: key);
 
   @override
-  State<Check_B> createState() => _Check_BState();
+  State<CheckBoxDesign> createState() => _CheckBoxDesignState();
 }
 
-class _Check_BState extends State<Check_B> {
+class _CheckBoxDesignState extends State<CheckBoxDesign> {
 
   bool isChecked = false;
 
