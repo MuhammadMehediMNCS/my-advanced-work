@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'book_page.dart';
 import 'books.dart';
 
-class createSearch extends StatelessWidget {
-  const createSearch({ Key? key }) : super(key: key);
+class CreateSearch extends StatelessWidget {
+  const CreateSearch({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
