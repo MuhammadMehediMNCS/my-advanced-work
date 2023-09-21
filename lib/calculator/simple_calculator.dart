@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-class simpleCalculator extends StatelessWidget {
-  const simpleCalculator({Key? key}) : super(key: key);
+class SimpleCalculator extends StatelessWidget {
+  const SimpleCalculator({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,19 +10,19 @@ class simpleCalculator extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Calculator',
       theme: ThemeData(primaryColor: Colors.blue.shade400),
-      home: const calculatorWidget(),
+      home: const MyCalculator(),
     );
   }
 }
 
-class calculatorWidget extends StatefulWidget {
-  const calculatorWidget({Key? key}) : super(key: key);
+class MyCalculator extends StatefulWidget {
+  const MyCalculator({Key? key}) : super(key: key);
 
   @override
-  State<calculatorWidget> createState() => _calculatorWidgetState();
+  State<MyCalculator> createState() => _MyCalculatorState();
 }
 
-class _calculatorWidgetState extends State<calculatorWidget> {
+class _MyCalculatorState extends State<MyCalculator> {
   String equation = "0";
   String result = "";
   String expression = "";
