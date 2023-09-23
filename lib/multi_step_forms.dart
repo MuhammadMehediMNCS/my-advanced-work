@@ -86,8 +86,8 @@ class _StepWidgetState extends State<StepWidget> {
                 if (currentStape != 0)
                 Expanded(
                   child: ElevatedButton(
-                    child: Text('Back'),
                     onPressed: currentStape == 0 ? null : () => setState(() => currentStape -= 1),
+                    child: const Text('Back')
                   )
                 )
               ],

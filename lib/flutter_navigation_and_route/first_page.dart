@@ -2,26 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:some_advanced/flutter_navigation_and_route/second_page.dart';
 import 'package:some_advanced/flutter_navigation_and_route/ten_page.dart';
 
-class Navigation_widget extends StatelessWidget {
-  const Navigation_widget({Key? key}) : super(key: key);
+class NavigationWidget extends StatelessWidget {
+  const NavigationWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Route_wid(),
+      home: RouteWid(),
     );
   }
 }
 
-class Route_wid extends StatefulWidget {
-  const Route_wid({Key? key}) : super(key: key);
+class RouteWid extends StatefulWidget {
+  const RouteWid({Key? key}) : super(key: key);
 
   @override
-  State<Route_wid> createState() => _Route_widState();
+  State<RouteWid> createState() => _RouteWidState();
 }
 
-class _Route_widState extends State<Route_wid> {
+class _RouteWidState extends State<RouteWid> {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(

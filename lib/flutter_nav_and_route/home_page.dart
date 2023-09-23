@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: Text(Routes.title),
+      title: const Text(Routes.title),
       actions: [
         IconButton(
           onPressed: () async {
@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
 
             Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => OnBScreen(title: 'title')));
           },
-          icon: Icon(Icons.logout)
+          icon: const Icon(Icons.logout)
         )
       ],
     ),

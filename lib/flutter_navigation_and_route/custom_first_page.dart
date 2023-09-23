@@ -3,8 +3,8 @@ import 'package:some_advanced/flutter_navigation_and_route/second_page.dart';
 import 'custom_button.dart';
 import 'custom_page_route.dart';
 
-class First_Page extends StatelessWidget {
-  const First_Page({Key? key}) : super(key: key);
+class FirstPage extends StatelessWidget {
+  const FirstPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class First_Page extends StatelessWidget {
       case '/first':
       default:
         return MaterialPageRoute(
-          builder: (context) => const First_Page(),
+          builder: (context) => const FirstPage(),
           settings: settings
         );
     }

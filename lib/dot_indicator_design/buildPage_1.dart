@@ -15,16 +15,17 @@ class _PageOneState extends State<PageOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         actions: [
           IconButton(
             onPressed: () async {
               final prefs = await SharedPreferences.getInstance();
               prefs.setBool('showHome', false);
 
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => OnBScreen(title: 'title')));
+              // ignore: use_build_context_synchronously
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const OnBScreen(title: 'title')));
             },
-            icon: Icon(Icons.logout)
+            icon: const Icon(Icons.logout)
           )
         ],
       ),

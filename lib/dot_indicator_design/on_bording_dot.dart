@@ -202,6 +202,7 @@ class _OnBScreenState extends State<OnBScreen> {
             final prefs = await SharedPreferences.getInstance();
             prefs.setBool('showHome', true);
       
+            // ignore: use_build_context_synchronously
             Navigator.pushReplacement(context, 
             MaterialPageRoute(builder: (context) => PageOne()));
           },

@@ -40,7 +40,7 @@ class _CopySTextState extends State<CopySText> {
         child: SelectableText(
           '',
           style: const TextStyle(fontSize: 24),
-          toolbarOptions: ToolbarOptions(
+          toolbarOptions: const ToolbarOptions(
             copy: true,
             // cut: true,
             // selectAll: true,

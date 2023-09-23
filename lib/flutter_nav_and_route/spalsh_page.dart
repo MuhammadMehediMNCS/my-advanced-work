@@ -9,11 +9,13 @@ class SplashPage extends StatelessWidget {
   
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
+  SplashPage({super.key});
+
   @override
   Widget build(BuildContext context) => Scaffold(
     key: scaffoldKey,
     appBar: AppBar(
-      title: Text(Routes.title),
+      title: const Text(Routes.title),
     ),
     body: Center(
       child: Column(

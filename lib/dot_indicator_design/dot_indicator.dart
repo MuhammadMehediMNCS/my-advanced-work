@@ -55,7 +55,7 @@ class _packageIndicatorState extends State<packageIndicator> {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: 10,
             child: SmoothPageIndicator(
               controller: controller,
