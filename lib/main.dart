@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:some_advanced/bottom_sheet.dart';
 import 'package:some_advanced/bottom_sheet_2.dart';
+import 'package:some_advanced/calculator/simple_calculator.dart';
 import 'package:some_advanced/check_box.dart';
 import 'package:some_advanced/copy_selectable_text.dart';
 import 'package:some_advanced/dot_indicator_design/dot_indicator.dart';
@@ -16,5 +17,5 @@ import 'package:some_advanced/text_design.dart';
 
 
 void main() {
-  runApp(BasicKey());
+  runApp(SimpleCalculator());
 }
