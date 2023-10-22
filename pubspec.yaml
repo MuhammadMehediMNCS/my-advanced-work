@@ -39,7 +39,8 @@ dependencies:
   image_picker:
   math_expressions:
   smooth_page_indicator:
-
+  bottom_navy_bar:
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
