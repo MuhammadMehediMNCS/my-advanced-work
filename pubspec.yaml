@@ -40,6 +40,7 @@ dependencies:
   math_expressions:
   smooth_page_indicator:
   bottom_navy_bar:
+  shimmer: ^3.0.0
   
 dev_dependencies:
   flutter_test:

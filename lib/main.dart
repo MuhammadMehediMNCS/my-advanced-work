@@ -12,10 +12,11 @@ import 'package:some_advanced/hide%20&%20show.dart';
 import 'package:some_advanced/image_button.dart';
 import 'package:some_advanced/multi_step_forms.dart';
 import 'package:some_advanced/shared_prefarencesWid.dart';
+import 'package:some_advanced/shimmer_effect/shimmer_main.dart';
 import 'package:some_advanced/switch_button.dart';
 import 'package:some_advanced/text_design.dart';
 
 
 void main() {
-  runApp(SimpleCalculator());
+  runApp(const ShimmerMain());
 }
